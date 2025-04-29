@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title id="pagetit"></title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LW2HGSDQCV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LW2HGSDQCV');
+</script>
+
+<style>
+body {
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#course-outline {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-left: 10%;
+    padding: 0px;
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+  }
+  #course-outline h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .course-topic {
+    margin-bottom: 30px;
+  }
+  .course-topic h3 {
+    color: #0056b3;
+    margin-bottom: 10px;
+  }
+  .course-topic ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  .course-topic ul li {
+    margin-bottom: 5px;
+  }
+
+#course-faq {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-left: 10%;
+    padding: 0px;
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    text-align: left;
+  }
+  #course-faq h2 {
+    text-align: center;
+    color: #333;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  .faq-item h3 {
+    color: #0056b3;
+  }
+  .faq-item ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  .faq-item ul li {
+    margin-bottom: 5px;
+  }
+  .faq-item p {
+    margin: 10px 0;
+  }
+
+.slider-container {
+  height: auto;
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+.slide {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem;
+  user-select: none;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn {
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .slide img {
+  transform: scale(0.9);
+}
+
+.header {
+  padding: 10px 10px;
+  background: white;
+  color: #499D9E;
+  font-size: 16px;
+  font-weight: 600;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.catdiv{
+  margin-left:10px;
+    margin-top:10px;
+}
+
+.menutop{
+  font-size: 18px;
+    font-weight: 500;
+}
+
+.lessonlink {
+color: black;
+text-decoration: none;
+}
+
+
+.trylineheight{
+    line-height: 120%;
+      padding-left:10px;
+}
+
+.subcatdivemi{
+  padding-top: 10px;
+    padding-bottom: 10px;
+  margin-top:5px;
+  margin-left:10px;
+    line-height: 130%;
+    border-left: 4px #BED5AE solid;
+}
+
+.subcatdivsen{
+  padding-top: 10px;
+    padding-bottom: 10px;
+  margin-top:5px;
+  margin-left:10px;
+    line-height: 130%;
+    border-left: 4px #AADCCA solid;
+}
+
+.myButton {
+	background-color:#499d9e;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:400;
+	padding:3px 15px;
+	text-decoration:none;
+}
+
+.access {
+	background-color:#499d9e;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:400;
+	padding:5px 40px;
+	text-decoration:none;
+}
+
+.part1button{
+	background-color:#333333;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:400;
+	padding:3px 35px;
+	text-decoration:none;
+  border: none;
+}
+
+.topicbutton{
+	background-color:white;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:400;
+	padding:6px;
+  width: 43%;
+	text-decoration:none;
+  box-shadow: 0px 2px 7px grey;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.topicbuttonnew{
+	background-color:white;
+	border-radius:12px;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:400;
+	padding:6px;
+  width: 89%;
+	text-decoration:none;
+  box-shadow: 0px 2px 7px grey;
+}
+
+
+
+#footer {
+  display: none;
+  position: fixed;
+    left: 0;
+  bottom: 0;
+    width: 100%;
+  background-color: white;
+  height: 70px;
+  padding-top: 7px;
+  padding-left: 11px;
+  border-top: 2px solid #009193;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+#footer a {
+  position: fixed;
+  bottom: 12px;
+  right: 14px;
+  border-radius: 3px;
+  border: none;
+  background-color: #B11E31;
+  color: white;
+  padding: 5px 12px;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow :1px 2px 1.5px grey;
+  text-decoration: none;
+}
+
+.newsamemi {
+  background-color: #ff9900;
+ font-size: 16px;
+  color: white;
+  border-radius: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+.more1button{
+	background-color:white;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#499d9e;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:400;
+	padding:3px 25px;
+	text-decoration:none;
+  border: none;
+}
+
+.more1button2{
+	background-color:white;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:360;
+	padding:3px 25px;
+	text-decoration:none;
+  border: none;
+}
+
+.faq {
+font-size:18px;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+font-weight: 400;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.faqa {
+font-size:16px;
+width: 75%;
+margin-top: -15px;
+margin-left: 13%;
+font-weight: 340;
+display: none;
+}
+
+.alignleft {
+	float: left;
+  font-size: 16px;
+}
+
+.alignright {
+	float: right;
+  margin-right: 20px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.part {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: black;
+}
+
+.partcontent {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: black;
+  background-color: #f6f6f6;
+}
+
+.oran {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #7F1E31;
+  color: white;
+  text-align: center;
+}
+
+.padpad {
+  width: 85%;
+  margin-left: 30px;
+  height: auto;
+  text-align: left;
+}
+
+.oran2 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.padpad2 {
+  width: 85%;
+  margin-left: 30px;
+  height: auto;
+  text-align: left;
+}
+
+.oran3 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #E8AA42;
+  color: white;
+  text-align: center;
+}
+
+.partfaq {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  color: black;
+}
+
+.box {
+  width: 100%;
+  height: 450px;
+  border-radius: 0px;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  position: absolute;
+  top: -40%;
+  left: -10%;
+  opacity: 0.3;
+  background: url("https://dooenglish.github.io/backup/ngc/ngccover.png");
+  width: 150%;
+  height: 550px;
+  transform-origin: 50% 48%;
+  border-radius: 30%;
+}
+
+#day0, #hour0, #minute0, #second0 {
+  color: red;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.chi {
+  font-size: 11px;
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-weight: 1000;
+  text-shadow: 0 0 7px black;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: auto%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+.catpc {
+  position: fixed;
+  display: none;
+  top:10%;
+  left:7.5%;
+  width: 85%;
+  height: 85%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+z-index: 2;
+}
+.catpctopics {
+  position: fixed;
+  display: none;
+  top:15%;
+  left:2%;
+  width: 90%;
+  height: 70%;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+z-index: 2;
+overflow-y: scroll;
+}
+
+.closecross {
+float: right;
+font-size: 30px;
+}
+
+.breakline {
+width:80%;
+text-align:center;
+height:2px;
+border-width: 0;
+background-color:lightgray;
+}
+
+.topicsechead {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+table, td {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  height: 50px;
+  vertical-align: center;
+  text-align: left;
+}
+
+.fircol {
+  width: 23%;
+}
+
+.rowhei {
+  height: 120px;
+}
+
+.rowhei2 {
+  height: 1px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class='box'>
+  <div class='wave -one'></div>
+  <div class='wave -two'></div>
+  <div class='wave -three'></div>
+  <div class='title'><span style="font-size: 7vw; font-weight: 600">DooEnglish 英文文法課</span><br><span style="font-size: 4vw; font-weight: 400">輕鬆搞明白文法規則</span></div>
+</div>
+<span id="bar"></span>
+
+<div class='part'>
+  <span style="font-size: 25px; font-weight: 500"><u>課程簡介</u></span><br><br>
+
+
+  <table>
+  <tr class="rowhei">
+    <td>DooEnglish 七年來分享了大量實用的英文詞彙用句，而文法則是將英文正確串連起來的關鍵。在我們全新的英文文法課程中，我們將帶你由淺入深，輕鬆搞明白英文文法，讓你的表達更加精準且專業！</td>
+  </tr>
+</table>
+
+<section id="course-faq">
+
+  <div class="faq-item">
+    <h3>課程有什麼內容？</h3>
+    <p>課程涵蓋由淺入深的英文文法規則，內容包括：</p>
+    <ul>
+      <li><strong>基礎句子結構與詞性：</strong>建立穩固文法基礎。</li>
+      <li><strong>動詞時式：</strong>掌握英文的核心時式。</li>
+      <li><strong>語態與語氣：</strong>靈活運用不同表達方式。</li>
+      <li><strong>複合句與從句結構分析：</strong>幫助你深入理解高級文法應用。</li>
+    </ul>
+  </div>
+
+  <div class="faq-item">
+    <h3>是怎麼學習文法的？</h3>
+    <p>
+      課程採用<strong>直觀教學</strong>，逐步講解文法規則，並輔以<strong>1300+ 練習題</strong>，幫助你全面理解並實際運用每個文法主題，遇到不明白的地方也可以 WhatsAPP/LINE 問我們。
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>課程適合什麼人？</h3>
+    <p>
+      課程適合想學好英文文法，但比較忙的人。課程是以網上自學形式學習，可以在自己有空的時候靈活安排學習。
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>能用手機或者電腦學習嗎？</h3>
+    <p>
+      當然可以！課程支援<strong>手機、平板和電腦</strong>，只要能上網，就可以隨時隨地學習。
+      付款完成後，你將獲得課程連結，自由安排學習進度。
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>有沒有使用期限？</h3>
+    <p>
+      <strong>沒有期限！</strong>一次購買，永久使用，隨時復習，反覆學習更放心。
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>付款參加後可以立即使用嗎？</h3>
+    <p>
+      是的！課程已準備就緒，付款完成後即可立即開啟你的學習旅程。
+    </p>
+  </div>
+</section>
+
+  <br>
+  </div>
+<div class="partcontent">
+<br><br>
+
+<img src="https://dooenglish.github.io/backup/ngc/learningapproach.jpg" width="99%" height="auto"><br>
+
+
+<br><br>
+
+
+</div>
+<br><br>
+<section id="course-outline">
+  <h2>課程主題目錄</h2>
+
+  <div class="course-topic">
+    <h3>基礎句子結構與詞性</h3>
+    <ul>
+      <li>基本語序規則</li>
+      <li>主語與謂語的基礎概念</li>
+      <li>常見詞性概述</li>
+      <li>簡單問句結構</li>
+      <li>名詞的種類與單複數</li>
+      <li>代詞的種類與用法</li>
+      <li>冠詞的基礎 (a/an/the)</li>
+      <li>形容詞的作用與位置</li>
+      <li>副詞的簡單用法</li>
+    </ul>
+  </div>
+
+  <div class="course-topic">
+    <h3>基礎句子結構與詞性 (二)</h3>
+    <ul>
+      <li>介詞的基礎用法</li>
+      <li>連接詞 (and, but, or)</li>
+      <li>肯定句與否定句的轉換</li>
+      <li>疑問詞 (who, what, where)</li>
+      <li>時間表達與相關句型</li>
+      <li>數字與量詞的表達</li>
+      <li>指示代詞的使用</li>
+      <li>基礎主謂一致規則</li>
+      <li>感嘆句的基礎</li>
+      <li>否定疑問句的用法</li>
+      <li>情態動詞 (can, may, must)</li>
+      <li>基本序數的用法</li>
+      <li>形容詞比較級與最高級</li>
+      <li>物主代詞 (mine, yours, ours..)</li>
+    </ul>
+  </div>
+
+  <div class="course-topic">
+    <h3>動詞時態</h3>
+    <ul>
+      <li>現在簡單式的使用</li>
+      <li>現在進行式的使用</li>
+      <li>過去簡單式的使用</li>
+      <li>過去進行式的使用</li>
+      <li>未來式的表達方法</li>
+      <li>現在完成式的使用</li>
+      <li>現在完成進行式的使用</li>
+      <li>過去完成式的使用</li>
+      <li>未來完成式的使用</li>
+      <li>簡單時態的比較</li>
+      <li>進行時態的比較</li>
+      <li>完成時態的比較</li>
+    </ul>
+  </div>
+
+  <div class="course-topic">
+    <h3>不同的語態和語氣</h3>
+    <ul>
+      <li>被動語態的基礎</li>
+      <li>主動與被動的轉換規則</li>
+      <li>被動語態的不同時式</li>
+      <li>虛擬語氣的使用</li>
+      <li>情態動詞與虛擬語氣結合</li>
+      <li>使用倒裝表達虛擬語氣</li>
+      <li>祈使句的使用</li>
+      <li>零條件句的使用</li>
+      <li>第一條件句的使用</li>
+      <li>第二條件句的使用</li>
+      <li>第三條件句的使用</li>
+      <li>Reported Speech 的基礎</li>
+      <li>Reported Questions 的轉換</li>
+      <li>Question tags 的使用</li>
+    </ul>
+  </div>
+
+  <div class="course-topic">
+    <h3>複合句與從句結構分析</h3>
+    <ul>
+      <li>什麼是複合句？</li>
+      <li>什麼是從句？</li>
+      <li>名詞從句的基礎</li>
+      <li>定語從句的基礎</li>
+      <li>狀語從句的基礎</li>
+      <li>關係代詞的使用</li>
+      <li>關係副詞的使用</li>
+      <li>分詞結構的基礎</li>
+      <li>動名詞的基礎</li>
+      <li>強調句子的某一部分</li>
+      <li>簡化句子中的重複部分</li>
+    </ul>
+  </div>
+</section>
+
+
+<br><br><br><br>
+
+
+
+
+
+
+<br>
+
+
+
+
+<div id="footer">
+<div style="font-size: 16px; font-weight: 400; text-align: left; color: #009193"><span style="display:none">學費：HK$998 </span><span id="disprice">學費  HKD $1996</span><br>**優惠暫時結束</div>
+
+<div id="disleft" style="font-size: 16px; font-weight: 450; text-align: left; color: red; display:none">優惠剩餘：<span id="day0"></span><span class="chi">天 </span><span id="hour0"></span><span class="chi">小時 </span><span id="minute0"></span><span class="chi">分 </span><span id="second0"></span><span class="chi">秒</span><br><span class="chi" id="ex24"></span></div>
+
+<a id="paymentLink" href="https://dooenglish.github.io/backup/ngc/rev.html">預留優惠名額</a>
+
+</div>
+
+
+
+<script>
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 24, 2026 00:00:00").getTime();
+var currentcode = "sur47disp";
+
+
+(function initializeCountdown() {
+  var now = new Date().getTime();
+  var timeSinceExpiration = now - countDownDate;
+
+  if (timeSinceExpiration > 0 && timeSinceExpiration <= 24 * 60 * 60 * 1000) {
+    // If expired but less than 24 hours, extend by 24 hours from the written time
+    countDownDate += 24 * 60 * 60 * 1000;
+    document.getElementById("ex24").innerHTML = "**加開最後24小時";
+  }
+})();
+
+
+// Update the countdown every 1 second
+var x = setInterval(function() {
+  // Get today's date and time
+
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  // Find the distance between now and the countdown date
+
+
+  // Time calculations for days, hours, minutes, and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in elements with id="day0", "hour0", "minute0", "second0"
+  document.getElementById("day0").innerHTML = days;
+  document.getElementById("hour0").innerHTML = hours;
+  document.getElementById("minute0").innerHTML = minutes;
+  document.getElementById("second0").innerHTML = seconds;
+
+  // If the countdown is over, extend it by 24 hours
+
+}, 1000);
+
+
+const faqa = [
+  "faqa1",
+  "faqa3",
+  "faqa4","faqa5","faqa6"
+];
+const faqsign = [
+  "faq1sign",
+  "faq3sign",
+  "faq4sign","faq5sign","faq6sign"
+];
+
+
+function faq(elmnt,clr,lesson,sign) {
+
+if(document.getElementById(sign).innerHTML == "+"){
+  for (let i = 0; i < faqa.length; i++) {
+  document.getElementById(faqa[i]).style.display = "none";
+  document.getElementById(faqsign[i]).innerHTML = "+";
+  }
+  document.getElementById(sign).innerHTML = "-";
+  document.getElementById(lesson).style.display ="block";
+}else{document.getElementById(lesson).style.display = "none";document.getElementById(sign).innerHTML = "+";}
+}
+
+
+
+window.onscroll = function() {
+  stickyBar()
+};
+
+var header = document.getElementById("bar");
+
+var sticky = header.offsetTop;
+
+  function stickyBar() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById("footer").style.display = "block";
+  } else {
+    header.classList.remove("sticky");
+    document.getElementById("footer").style.display = "none";
+  }
+}
+
+</script>
+
+
+
+</body>
+</html>
