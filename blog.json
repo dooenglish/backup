@@ -1,50 +1,22 @@
 [
   {
-    "id": 1,
-    "title": "How to use present perfect?",
-    "content": "Present perfect is used to describe actions that happened at an unspecified time.",
-    "category": "Grammar"
-  },
-  {
-    "id": 2,
-    "title": "What is a phrasal verb?",
-    "content": "A phrasal verb is a phrase that consists of a verb plus a preposition or adverb.",
-    "category": "Vocabulary"
-  },
-  {
-    "id": 3,
-    "title": "What is a phrasal verb?",
-    "content": "A phrasal verb is a phrase that consists of a verb plus a preposition or adverb.",
-    "category": "我的"
-  },
-  {
-    "id": 4,
-    "title": "What is a phrasal verb?",
-    "content": "A phrasal verb is a phrase that consists of a verb plus a preposition or adverb.",
-    "category": "ABCD"
-  },
-  {
-    "id": 5,
-    "title": "What is a phrasal verb?",
-    "content": "A phrasal verb is a phrase that consists of a verb plus a preposition or adverb.",
-    "category": "ABCD"
-  },
-  {
-    "id": 6,
-    "title": "What is a phrasal verb?",
-    "content": "A phrasal verb is a phrase that consists of a verb plus a preposition or adverb.",
-    "category": "ABCD"
-  },
-  {
-    "id": 7,
-    "title": "What is a phrasal verb?",
-    "content": "A phrasal verb is a phrase that consists of a verb plus a preposition or adverb.",
-    "category": "文法"
-  },
-  {
-    "id": 8,
-    "title": "What is a phrasal verb?",
-    "content": "A phrasal verb is a phrase that consists of a verb plus a preposition or adverb.",
-    "category": "AAA"
+    "word": "conclave",
+    "definition_zh": "秘密會議；（尤指）樞機主教選舉教宗的會議",
+    "example_sentence": "The cardinals met in a conclave to elect the new pope.",
+    "example_sentence_zh": "樞機主教們舉行秘密會議選出新教宗。",
+    "word_audio": "https://dooenglish.github.io/backup/audio/conclave.mp3",
+    "sentence_audio": "https://dooenglish.github.io/backup/audio/conclave_sentence.mp3",
+    "collocations": [
+      {
+        "phrase": "papal conclave",
+        "phrase_zh": "教宗選舉會議",
+        "phrase_audio": "https://dooenglish.github.io/backup/audio/papal_conclave.mp3"
+      },
+      {
+        "phrase": "secret conclave",
+        "phrase_zh": "秘密會議",
+        "phrase_audio": "https://dooenglish.github.io/backup/audio/secret_conclave.mp3"
+      }
+    ]
   }
 ]
