@@ -2,10 +2,19 @@
   {
     "word": "conclave",
     "definition_zh": "秘密會議；（尤指）樞機主教選舉教宗的會議",
-    "example_sentence": "The cardinals met in a conclave to elect the new pope.",
-    "example_sentence_zh": "樞機主教們舉行秘密會議選出新教宗。",
+    "example_sentences": [
+      {
+        "en": "The cardinals met in a conclave to elect the new pope.",
+        "zh": "樞機主教們舉行秘密會議選出新教宗。",
+        "audio": "https://dooenglish.github.io/backup/audio/conclave_sentence.mp3"
+      },
+      {
+        "en": "The company held a conclave to discuss its future strategy.",
+        "zh": "公司舉行了秘密會議討論未來策略。",
+        "audio": "https://dooenglish.github.io/backup/audio/conclave_sentence2.mp3"
+      }
+    ],
     "word_audio": "https://dooenglish.github.io/backup/audio/conclave.mp3",
-    "sentence_audio": "https://dooenglish.github.io/backup/audio/conclave_sentence.mp3",
     "collocations": [
       {
         "phrase": "papal conclave",
