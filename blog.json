@@ -1,35 +1,241 @@
 [
   {
-    "word": "conclave",
-    "definition_zh": "秘密會議；（尤指）樞機主教選舉教宗的會議",
-    "example_sentences": [
+    "date": "2024-05-13",
+    "vocabs": [
       {
-        "en": "The cardinals met in a conclave to elect the new pope.",
-        "zh": "樞機主教們舉行秘密會議選出新教宗。",
-        "audio": "https://dooenglish.github.io/backup/audio/conclave_sentence.mp3"
-      },
-      {
-        "en": "The company held a conclave to discuss its future strategy.",
-        "zh": "公司舉行了秘密會議討論未來策略。",
-        "audio": "https://dooenglish.github.io/backup/audio/conclave_sentence2.mp3"
+        "word": "conclave",
+        "definition_zh": "秘密會議，特指選舉教宗的樞機主教會議；或任何重要議題的閉門會議",
+        "example_sentences": [
+          {
+            "en": "World leaders gathered in a secret conclave to discuss urgent global matters.",
+            "zh": "世界領袖們齊聚一場秘密會議，討論緊急的全球議題。",
+            "audio": "https://your-audio-url/conclave_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/conclave.mp3",
+        "collocations": [
+          {
+            "phrase": "secret conclave",
+            "phrase_zh": "秘密會議",
+            "phrase_audio": "https://your-audio-url/secret_conclave.mp3"
+          }
+        ]
       }
-    ],
-    "word_audio": "https://dooenglish.github.io/backup/audio/conclave.mp3",
-    "collocations": [
+    ]
+  },
+  {
+    "date": "2024-05-12",
+    "vocabs": [
       {
-        "phrase": "papal conclave",
-        "phrase_zh": "教宗選舉會議",
-        "phrase_audio": "https://dooenglish.github.io/backup/audio/papal_conclave.mp3"
-      },
+        "word": "sanction",
+        "definition_zh": "制裁，懲罰措施；批准，認可",
+        "example_sentences": [
+          {
+            "en": "The UN imposed economic sanctions on the country.",
+            "zh": "聯合國對該國實施了經濟制裁。",
+            "audio": "https://your-audio-url/sanction_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/sanction.mp3",
+        "collocations": [
+          {
+            "phrase": "impose sanctions",
+            "phrase_zh": "施加制裁",
+            "phrase_audio": "https://your-audio-url/impose_sanctions.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-05-11",
+    "vocabs": [
       {
-        "phrase": "secret conclave",
-        "phrase_zh": "秘密會議",
-        "phrase_audio": "https://dooenglish.github.io/backup/audio/secret_conclave.mp3"
-      },
+        "word": "summit",
+        "definition_zh": "高峰會，領袖會談；山頂",
+        "example_sentences": [
+          {
+            "en": "The climate summit gathered leaders from over 100 countries.",
+            "zh": "氣候高峰會聚集了來自100多個國家的領袖。",
+            "audio": "https://your-audio-url/summit_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/summit.mp3",
+        "collocations": [
+          {
+            "phrase": "global summit",
+            "phrase_zh": "全球高峰會",
+            "phrase_audio": "https://your-audio-url/global_summit.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-05-10",
+    "vocabs": [
       {
-        "phrase": "secret conclave2",
-        "phrase_zh": "秘密會議",
-        "phrase_audio": "https://dooenglish.github.io/backup/audio/secret_conclave.mp3"
+        "word": "diplomacy",
+        "definition_zh": "外交，外交手腕",
+        "example_sentences": [
+          {
+            "en": "Diplomacy is crucial in resolving international conflicts.",
+            "zh": "外交在解決國際衝突中至關重要。",
+            "audio": "https://your-audio-url/diplomacy_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/diplomacy.mp3",
+        "collocations": [
+          {
+            "phrase": "shuttle diplomacy",
+            "phrase_zh": "穿梭外交",
+            "phrase_audio": "https://your-audio-url/shuttle_diplomacy.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-05-09",
+    "vocabs": [
+      {
+        "word": "embargo",
+        "definition_zh": "禁運，封鎖",
+        "example_sentences": [
+          {
+            "en": "The oil embargo caused prices to soar worldwide.",
+            "zh": "石油禁運導致全球價格飆升。",
+            "audio": "https://your-audio-url/embargo_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/embargo.mp3",
+        "collocations": [
+          {
+            "phrase": "trade embargo",
+            "phrase_zh": "貿易禁運",
+            "phrase_audio": "https://your-audio-url/trade_embargo.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-05-08",
+    "vocabs": [
+      {
+        "word": "coalition",
+        "definition_zh": "聯盟，聯合政府",
+        "example_sentences": [
+          {
+            "en": "A coalition of nations responded to the crisis.",
+            "zh": "一個國家聯盟對危機做出了回應。",
+            "audio": "https://your-audio-url/coalition_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/coalition.mp3",
+        "collocations": [
+          {
+            "phrase": "coalition government",
+            "phrase_zh": "聯合政府",
+            "phrase_audio": "https://your-audio-url/coalition_government.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-05-07",
+    "vocabs": [
+      {
+        "word": "referendum",
+        "definition_zh": "公投，公民投票",
+        "example_sentences": [
+          {
+            "en": "The government announced a referendum on the new policy.",
+            "zh": "政府宣布將就新政策舉行公投。",
+            "audio": "https://your-audio-url/referendum_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/referendum.mp3",
+        "collocations": [
+          {
+            "phrase": "hold a referendum",
+            "phrase_zh": "舉行公投",
+            "phrase_audio": "https://your-audio-url/hold_a_referendum.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-05-06",
+    "vocabs": [
+      {
+        "word": "treaty",
+        "definition_zh": "條約，協定",
+        "example_sentences": [
+          {
+            "en": "The peace treaty was signed after months of negotiation.",
+            "zh": "經過數月談判後，和平條約正式簽署。",
+            "audio": "https://your-audio-url/treaty_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/treaty.mp3",
+        "collocations": [
+          {
+            "phrase": "sign a treaty",
+            "phrase_zh": "簽署條約",
+            "phrase_audio": "https://your-audio-url/sign_a_treaty.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-05-05",
+    "vocabs": [
+      {
+        "word": "asylum",
+        "definition_zh": "政治庇護，避難",
+        "example_sentences": [
+          {
+            "en": "Thousands sought asylum in neighboring countries.",
+            "zh": "數千人向鄰國尋求政治庇護。",
+            "audio": "https://your-audio-url/asylum_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/asylum.mp3",
+        "collocations": [
+          {
+            "phrase": "seek asylum",
+            "phrase_zh": "尋求庇護",
+            "phrase_audio": "https://your-audio-url/seek_asylum.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2024-05-04",
+    "vocabs": [
+      {
+        "word": "incumbent",
+        "definition_zh": "在職者，現任的（官員等）",
+        "example_sentences": [
+          {
+            "en": "The incumbent president addressed the nation.",
+            "zh": "現任總統發表了全國講話。",
+            "audio": "https://your-audio-url/incumbent_sentence1.mp3"
+          }
+        ],
+        "word_audio": "https://your-audio-url/incumbent.mp3",
+        "collocations": [
+          {
+            "phrase": "incumbent government",
+            "phrase_zh": "現任政府",
+            "phrase_audio": "https://your-audio-url/incumbent_government.mp3"
+          }
+        ]
       }
     ]
   }
