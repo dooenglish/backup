@@ -1,0 +1,185 @@
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-188440413-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-188440413-1');
+</script>
+
+
+</head>
+
+<div class="fullscreen">
+
+	<h2>DooEnglish</h2>
+
+	<div class="box">
+
+		<p class="box_text"><span>&#10022;</span> 歡迎你參加這個課程，請點擊下面按鈕用WhatsApp/LINE向我們說一句「課程報到」就可以。</p>
+		<p class="box_text"><span>&#10022;</span> 我們會在24小時內回覆確認</p>
+	<br><br>
+		<div id="counter">
+
+            <a href="http://www.dooenglish.net/redirectlineb3.html"><button
+  style="background-color:#6AC1B7;color:#FFF;padding:8px 27px;border:0;border-radius:4px;font-size:1em"
+  id="line"
+  role="link"
+  type="button"
+>
+  用 LINE 報到
+</button></a>&nbsp;&nbsp;&nbsp;<a href="https://wa.me/85265745572?text=%E8%AA%B2%E7%A8%8B%E5%A0%B1%E5%88%B0"><button
+  style="background-color:#6AC1B7;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="line"
+  role="link"
+  type="button"
+>
+  用 WhatsApp 報到
+</button></a>
+
+            <br><br><br>
+
+		</div>
+
+	</div>
+
+
+</div>
+
+
+<script>
+
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 2, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+ // Output the result in an element with id="demo"
+	document.getElementById("day").innerHTML = days;
+	document.getElementById("hour").innerHTML = hours;
+	document.getElementById("minute").innerHTML = minutes;
+	document.getElementById("second").innerHTML = seconds;
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+	.fullscreen {
+		position: absolute;
+		background-color: #6AC1B7;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+		height: 100%;
+	}
+
+	.box_text {
+		color: black;
+		font-family: 'Noto Sans TC', sans-serif;
+		font-weight: 400;
+	}
+
+	h2 {
+		color: white;
+		line-height: 2vw;
+		margin-left: 2vw;
+		margin-bottom: 10vw;
+		font-size: 6vw;
+		font-family: 'Pacifico', cursive;
+	}
+
+	.box {
+		width: 80%;
+		height: auto;
+		background-color: white;
+		margin: 0 auto 0 auto;
+		padding: 8vw 0 40vw 0;
+	}
+
+	.box_text {
+		color: #424242;
+		margin: 4vw 3vw 0 4vw;
+		font-size: 4vw;
+		line-height: 6vw;
+		font-weight: 300;
+	}
+
+	.box_text span {
+		font-weight: 300;
+		font-size: 4vw;
+		color: #797979;
+		margin-right: 1vw;
+	}
+
+	.box_text:last-child {
+		margin-left: 0;
+		text-align: center;
+
+	}
+
+	#counter {
+		bottom: 0vw;
+		text-align: center;
+		font-size: 2.5vw;
+		color: black;
+	}
+
+	#counter p {
+		color: #424242;
+		font-weight: 300;
+		font-family: 'Noto Sans TC', sans-serif;
+	}
+
+	.experiensive {
+		font-size: 3.6vw;
+		text-decoration: line-through;
+		margin-left: 2vw;
+	}
+
+	.chi {
+		font-size: 3.2vw;
+		margin-left: .3vw;
+
+	}
+
+	#day, #hour, #minute, #second {
+		color: #FF5722;
+		font-weight: 600;
+		font-size: 4vw;
+	}
+
+
+
+
+
+</style>
