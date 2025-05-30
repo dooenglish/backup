@@ -75,7 +75,7 @@
       '<a href="https://dooenglish.github.io/backup/ngc/land2/fbo_us.html">其他</a>';
 
     // 隨機選擇其中一個版本，50% 機率
-    var chosen = Math.random() > 1 ? versionA : versionB;
+    var chosen = Math.random() < 1.01 ? versionA : versionB;
 
     // 將選擇後的連結組插入到指定的容器中
     document.getElementById("regionLinks").innerHTML = chosen;
