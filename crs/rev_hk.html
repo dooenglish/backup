@@ -429,18 +429,13 @@
   <div id="footer-bar">
     <div class="footer-bar-content">
       <div>
-        <span id="disprice">早鳥66折優惠：US$249</span><span id="oriprice"><s>$380</s></span>
+        <span id="disprice">學費：HK$3,000</span>
       </div>
       <div id="disleft">
-        優惠剩餘：
-        <span id="day0"></span><span class="chi">天 </span>
-        <span id="hour0"></span><span class="chi">小時 </span>
-        <span id="minute0"></span><span class="chi">分 </span>
-        <span id="second0"></span><span class="chi">秒 (可永久使用)</span><br>
-        <span class="chi" id="ex24"></span>
+        <span class="chi" id="ex24">課程暫時滿額，可以先預留名額</span>
       </div>
     </div>
-    <a id="paymentLink" href="https://dooenglish.github.io/backup/crs/fbo_us.html">了解參加流程</a>
+    <a id="paymentLink" href="https://dooenglish.github.io/backup/crs/rev.html">預留名額</a>
   </div>
 
   <script>
@@ -488,22 +483,7 @@
     typeTitle();
   });
 
-  // Set the date we're counting down to（可自行調整優惠截止日）
-  var countDownDate = new Date("Jun 30, 2025 00:00:00").getTime();
 
-
-  (function initializeCountdown() {
-    var now = new Date().getTime();
-    var timeSinceExpiration = now - countDownDate;
-    if (timeSinceExpiration > 0 && timeSinceExpiration <= 24 * 60 * 60 * 1000) {
-      countDownDate += 24 * 60 * 60 * 1000;
-      document.getElementById("ex24").innerHTML = "**加開最後24小時";
-    } else {
-      if (timeSinceExpiration > 24 * 60 * 60 * 1000) {
-        location.replace("https://dooenglish.github.io/backup/crs/rev_hk.html");
-      }
-    }
-  })();
 
   // Update the countdown every 1 second
   setInterval(function() {
