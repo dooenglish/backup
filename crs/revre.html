@@ -1,160 +1,171 @@
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!doctype html>
+<html lang="zh-Hant">
 <head>
-
-  <title>DooEnglish 養成課reland</title>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LW2HGSDQCV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-LW2HGSDQCV');
-  </script>
-
-
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1877745272396859');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1877745272396859&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-
-
-
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DooEnglish 英文養成課｜早鳥優惠已結束</title>
+  <meta name="description" content="非常抱歉，DooEnglish 英文養成課的早鳥優惠已經結束。" />
+  <style>
+    :root{
+      --bg: #0e1116;
+      --text: #e8edf5;
+      --muted: #aab3c2;
+      --danger: #ff6b6b;
+      --brand: #5aa9ff;
+      --card: #131827;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --maxw: 780px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 110% -10%, rgba(90,169,255,.16), transparent 60%),
+        radial-gradient(700px 500px at -10% 110%, rgba(255,107,107,.10), transparent 60%),
+        var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto,"Noto Sans TC","Helvetica Neue", Arial,"PingFang TC","Microsoft JhengHei", sans-serif;
+      line-height:1.6;
+    }
+    .wrap{
+      min-height:100%;
+      display:grid;
+      place-items:center;
+      padding:48px 16px;
+    }
+    .card{
+      width:100%;
+      max-width:var(--maxw);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)) padding-box,
+                  linear-gradient(135deg, rgba(122,196,255,.5), rgba(255,107,107,.45)) border-box;
+      border:1px solid transparent;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+      backdrop-filter: blur(6px);
+    }
+    .inner{
+      padding:36px 28px;
+      display:grid;
+      gap:16px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 14px;
+      border-radius:999px;
+      background: rgba(90,169,255,.12);
+      border:1px solid rgba(90,169,255,.35);
+      color:#dff0ff;
+      width:max-content;
+      font-weight:600;
+      font-size:14px;
+      user-select:none;
+    }
+    .dot{
+      width:8px; height:8px; border-radius:50%;
+      background: linear-gradient(135deg, #5aa9ff, #a8e1ff);
+      box-shadow: 0 0 0 4px rgba(90,169,255,.15);
+    }
+    h1{
+      margin:10px 0 6px;
+      font-size: clamp(28px, 5.5vw, 48px);
+      line-height:1.12;
+      letter-spacing:.2px;
+    }
+    .lead{
+      color:var(--muted);
+      font-size: clamp(15px, 2.6vw, 18px);
+      margin:0 0 6px;
+    }
+    .status{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      background: rgba(255,107,107,.10);
+      border:1px solid rgba(255,107,107,.35);
+      color:#ffdede;
+      font-weight:700;
+      width:max-content;
+      margin-top:6px;
+    }
+    .status .s-dot{
+      width:10px;height:10px;border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #fff, #ff9a9a 60%, #ff6b6b 100%);
+      box-shadow: 0 0 0 5px rgba(255,107,107,.15), inset 0 0 18px rgba(255,107,107,.45);
+    }
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
+      margin:16px 0 4px;
+    }
+    .mini{
+      color:#9fb0c7;
+      font-size:12px;
+    }
+    footer{
+      text-align:center;
+      color:#95a6bd;
+      font-size:12px;
+      margin-top:14px;
+    }
+    .ribbon {
+      position: absolute;
+      top: 16px;
+      right: -56px;
+      transform: rotate(35deg);
+      background: linear-gradient(90deg, var(--danger), #ff9a9a);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: .08em;
+      padding: 10px 72px;
+      font-size: 12px;
+      text-transform: uppercase;
+      box-shadow: 0 8px 20px rgba(255,107,107,.35);
+      user-select: none;
+    }
+    @media (max-width: 640px){
+      .ribbon{ display:none; }
+      .inner{ padding:28px 20px; }
+    }
+  </style>
 </head>
+<body>
+  <div class="wrap">
+    <main class="card" role="main" aria-labelledby="title">
+      <div class="ribbon" aria-hidden="true">Early-bird Ended</div>
+      <div class="inner">
+        <div class="badge" aria-label="DooEnglish 英文養成課">
+          <span class="dot" aria-hidden="true"></span>
+          DooEnglish 英文養成課
+        </div>
 
+        <h1 id="title">非常抱歉，早鳥優惠已經結束</h1>
+        <p class="lead">感謝您的關注與支持。目前本課程的早鳥優惠檔期已完結。</p>
 
-<div id="que">
+        <div class="status" role="status" aria-live="polite">
+          <span class="s-dot" aria-hidden="true"></span>
+          早鳥已截止
+        </div>
 
-	<div>
-<h3><span style="font-family: Pacifico">DooEnglish</span> 英文養成課</h3>
-		<p>請選擇你的地區：</p>
-		<div id="regionLinks"></div>
-	</div>
+        <div class="divider"></div>
+        
+      </div>
+    </main>
 
-</div>
+    <footer>
+      © <span id="y"></span> DooEnglish. 保留所有權利。
+    </footer>
+  </div>
 
-
-<div class="cookie">
-為提供更佳使用體驗，本網站中使用cookie，若繼續使用本網站，即表示您同意我們使用 Cookie。查看<a href="https://dooenglish.net/privacyterms.html">隱私條款</a>。
-</div>
-
-<script>
-  (function(){
-    // 定義版本 A 的連結組
-    var versionA =
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_hk.html">香港</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_tw.html">台灣</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_mo.html">澳門</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_my.html">馬來西亞</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_sg.html">新加坡</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_us.html">其他</a>';
-
-    // 定義版本 B 的連結組
-    var versionB =
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_hk.html">香港</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_tw.html">台灣</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_mo.html">澳門</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_my.html">馬來西亞</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_sg.html">新加坡</a>' +
-      '<a href="https://dooenglish.github.io/backup/crs/fborev_us.html">其他</a>';
-
-    // 隨機選擇其中一個版本，50% 機率
-    var chosen = Math.random() > 1 ? versionA : versionB;
-
-    // 將選擇後的連結組插入到指定的容器中
-    document.getElementById("regionLinks").innerHTML = chosen;
-  })();
-</script>
-
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
-
-	#que {
-		position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-		height: 100%;
-		background-image: url('https://dooenglish.github.io/backup/ngc/reland.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-	}
-
-	#que div {
-		position: relative;
-		text-align: center;
-		top: 5%;
-		font-family: "Tahoma", 'Noto Serif TC', serif;
-	}
-
-	#que p {
-		font-size: 19px;
-		color: white;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 1000;
-    text-shadow: 0 0 7px grey;
-	}
-
-	#que h3 {
-		font-size: 25px;
-		color: white;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 1000;
-    text-shadow: 0 0 7px grey;
-	}
-
-  .cookie{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    color: black;
-    font-size: 10px;
-    width: 95%;
-    padding: 10px;
-  }
-
-	#que a {
-		display: block;
-		margin: 8px auto;
-		width: 120px;
-		font-size: 16px;
-		padding: 8px;
-		border: none;
-		border-radius: 8px;
-		box-shadow :2px 4px 6px grey;
-		background-color: white;
-		color: #28385E;
-		font-weight: 500;
-		font-family: "Tahoma", 'Noto Serif TC', serif;
-	}
-
-
-
-</style>
-
-<script>
-var url = window.location.href;
-var pagetitle = url.split('/').pop().split('.')[0];
-document.getElementById("pagetit").innerHTML = "nrc_reland_" + pagetitle;
-</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
